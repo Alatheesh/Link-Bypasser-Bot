@@ -84,7 +84,7 @@ def send_start(client: pyrogram.client.Client, message: pyrogram.types.messages_
     app.send_message(message.chat.id, f"__👋 Hi **{message.from_user.mention}**, i am Link Bypasser Bot, just send me any supported links and i will you get you results.\nCheckout /help to Read More__",
     reply_markup=InlineKeyboardMarkup([
         [ InlineKeyboardButton("JOIN MAIN", url="https://t.me/llathu63035")],
-        [ InlineKeyboardButton(DEVELOPER", url="https://t.me/TG_LATHEESH ") ]]), 
+        [ InlineKeyboardButton("DEVELOPER", url="https://t.me/TG_LATHEESH ") ]]), 
         reply_to_message_id=message.id)
 
 
