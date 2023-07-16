@@ -109,7 +109,7 @@ def docthread(message):
     file = app.download_media(message)
     dlccont = open(file,"r").read()
     link = bypasser.getlinks(dlccont,sess)
-    app.edit_message_text(message.chat.id, msg.id, f'__HERE IS YOUR LINK\n\n ORIGINAL- __{link}__\n\n JOIN @llathu63035__'')
+    app.edit_message_text(message.chat.id, msg.id, f'__HERE IS YOUR LINK\n\n ORIGINAL- __{link}__\n\n JOIN @llathu63035__')
     os.remove(file)
 
 
