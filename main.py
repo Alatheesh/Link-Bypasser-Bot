@@ -44,9 +44,9 @@ def loopthread(message,otherss=False):
         msg = app.send_message(message.chat.id, "⚡ __generating...__", reply_to_message_id=message.id)
     else:
         if urls[0] in "https://olamovies" or urls[0] in "https://psa.pm/":
-            msg = app.send_message(message.chat.id, "🔎 __this might take some time...__", reply_to_message_id=message.id)
+            msg = app.send_message(message.chat.id, "🔎 __BYPASSING YOUR LINK\n THIS MIGHT TAKE FEW SECONDS......__", reply_to_message_id=message.id)
         else:
-            msg = app.send_message(message.chat.id, "🔎 __bypassing...__", reply_to_message_id=message.id)
+            msg = app.send_message(message.chat.id, "🔎 __BYPASSING YOUR LINK\n THIS MIGHT TAKE FEW SECONDS......__", reply_to_message_id=message.id)
 
     link = ""
     for ele in urls:
@@ -83,8 +83,8 @@ def loopthread(message,otherss=False):
 def send_start(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
     app.send_message(message.chat.id, f"__👋 Hi **{message.from_user.mention}**, i am Link Bypasser Bot, just send me any supported links and i will you get you results.\nCheckout /help to Read More__",
     reply_markup=InlineKeyboardMarkup([
-        [ InlineKeyboardButton("🌐 Source Code", url="https://github.com/bipinkrish/Link-Bypasser-Bot")],
-        [ InlineKeyboardButton("Replit", url="https://replit.com/@bipinkrish/Link-Bypasser#app.py") ]]), 
+        [ InlineKeyboardButton("JOIN MAIN", url="https://t.me/llathu63035")],
+        [ InlineKeyboardButton(DEVELOPER", url="https://t.me/TG_LATHEESH ") ]]), 
         reply_to_message_id=message.id)
 
 
@@ -109,7 +109,7 @@ def docthread(message):
     file = app.download_media(message)
     dlccont = open(file,"r").read()
     link = bypasser.getlinks(dlccont,sess)
-    app.edit_message_text(message.chat.id, msg.id, f'__{link}__')
+    app.edit_message_text(message.chat.id, msg.id, f'__HERE IS YOUR LINK\n\n ORIGINAL- __{link}__\n\n JOIN @llathu63035__'')
     os.remove(file)
 
 
